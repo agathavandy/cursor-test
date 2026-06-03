@@ -17,8 +17,9 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $color-text;
-  background: linear-gradient(160deg, $color-bg-gradient-start 0%, $color-bg-gradient-end 50%, #0a0e14 100%);
+  // background: linear-gradient(160deg, $color-bg-gradient-start 0%, $color-bg-gradient-end 50%, #0a0e14 100%);
   min-height: 100vh;
+  background-color: rgb(27, 66, 99);
 }
 
 img {

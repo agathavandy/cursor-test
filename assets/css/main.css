@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -15,8 +16,8 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   color: #1e293b;
-  background: linear-gradient(160deg, #1a2332 0%, #0d1117 50%, #0a0e14 100%);
   min-height: 100vh;
+  background-color: rgb(27, 66, 99);
 }
 
 img {
@@ -102,15 +103,26 @@ a {
   background: #ffffff;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.12);
+  -webkit-box-shadow: 0 4px 24px rgba(15, 23, 42, 0.12);
+          box-shadow: 0 4px 24px rgba(15, 23, 42, 0.12);
   border: 1px solid #e2e8f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
+  transition: -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
 }
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+          box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
 }
 .card__media {
   background: #f1f5f9;
@@ -122,9 +134,16 @@ a {
 }
 .card__body {
   padding: 1.25rem 1.25rem 1.5rem;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 0.625rem;
 }
 .card__title {
@@ -137,6 +156,4 @@ a {
   font-size: 0.9375rem;
   color: #64748b;
   line-height: 1.65;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
