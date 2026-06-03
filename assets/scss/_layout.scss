@@ -1,0 +1,45 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.container {
+  @include container;
+}
+
+.site-header {
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+  color: $color-header-text;
+
+  &__eyebrow {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $color-accent-soft;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  &__lead {
+    font-size: 1.0625rem;
+    color: rgba($color-header-text, 0.75);
+    max-width: 32rem;
+    margin-inline: auto;
+  }
+}
+
+.site-main {
+  padding-bottom: 3rem;
+}
+
+.site-footer {
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+  color: rgba($color-header-text, 0.5);
+  font-size: 0.875rem;
+  border-top: 1px solid rgba($color-header-text, 0.08);
+}

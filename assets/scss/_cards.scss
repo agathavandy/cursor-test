@@ -1,0 +1,56 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.card-grid {
+  @include card-grid-columns(1);
+
+  @include respond-min($bp-tablet) {
+    @include card-grid-columns(2);
+  }
+
+  @include respond-min($bp-desktop) {
+    @include card-grid-columns(4);
+  }
+}
+
+.card {
+  background: $color-surface;
+  border-radius: $card-radius;
+  overflow: hidden;
+  box-shadow: 0 4px 24px $color-shadow;
+  border: 1px solid $color-border;
+  display: flex;
+  flex-direction: column;
+  @include card-hover-lift;
+
+  &__media {
+    background: #f1f5f9;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__body {
+    padding: 1.25rem 1.25rem 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: blue;
+    line-height: 1.3;
+  }
+
+  &__text {
+    font-size: 0.9375rem;
+    color: $color-text-muted;
+    line-height: $line-height-base;
+  }
+}

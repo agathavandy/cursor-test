@@ -1,0 +1,27 @@
+// Colors
+$color-bg: #0f1419;
+$color-bg-gradient-start: #1a2332;
+$color-bg-gradient-end: #0d1117;
+$color-surface: #ffffff;
+$color-text: #1e293b;
+$color-text-muted: #64748b;
+$color-accent: #e11d48;
+$color-accent-soft: #fda4af;
+$color-header-text: #f8fafc;
+$color-border: #e2e8f0;
+$color-shadow: rgba(15, 23, 42, 0.12);
+
+// Typography
+$font-family-base: "Segoe UI", "Microsoft JhengHei", "PingFang TC", sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.65;
+
+// Layout
+$container-max: 1600px;
+$container-padding: 1.25rem;
+$grid-gap: 1.5rem;
+$card-radius: 1rem;
+
+// Breakpoints
+$bp-tablet: 768px;
+$bp-desktop: 1024px;

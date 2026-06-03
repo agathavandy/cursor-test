@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Microsoft JhengHei", "PingFang TC", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #1e293b;
+  background: linear-gradient(160deg, #1a2332 0%, #0d1117 50%, #0a0e14 100%);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.site-header {
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+  color: #f8fafc;
+}
+.site-header__eyebrow {
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fda4af;
+  margin-bottom: 0.5rem;
+}
+.site-header__title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.site-header__lead {
+  font-size: 1.0625rem;
+  color: rgba(248, 250, 252, 0.75);
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+.site-main {
+  padding-bottom: 3rem;
+}
+
+.site-footer {
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+  color: rgba(248, 250, 252, 0.5);
+  font-size: 0.875rem;
+  border-top: 1px solid rgba(248, 250, 252, 0.08);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+.card__media {
+  background: #f1f5f9;
+}
+.card__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card__body {
+  padding: 1.25rem 1.25rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: blue;
+  line-height: 1.3;
+}
+.card__text {
+  font-size: 0.9375rem;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+/*# sourceMappingURL=main.css.map */
